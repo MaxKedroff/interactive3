@@ -124,7 +124,7 @@ utDiv.onclick=e=>{
       if(i<total){show(i);}
       else{
           bar.style.width='100%';
-          alert('Супер! Вы всё подобрали.');
+          window.parent.postMessage('gameCompleted', '*');
           i=0;show(i);
       }
   }
